@@ -14,7 +14,7 @@ app.use(express.static(path.join(__dirname,'public')));
 
 app.use(user);
 app.use('/admin',admin);
-app.use((req,res)=>{res.status(404).render('404')});
+app.use((req,res)=>{res.status(404).render('404',{errorMsg:"Page Not Found"})});
 
 
 
