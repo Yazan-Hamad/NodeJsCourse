@@ -3,20 +3,20 @@ const router = express.Router();
 const path = require('path');
 
 router.get('/', (req, res, next) => {
-    res.sendFile(path.join(__dirname,'..','views','index.html'));
+  res.render('index',{pageTitle:"home"})
   });
 router.get('/contact.html', (req, res, next) => {
-    res.sendFile(path.join(__dirname,'..','views','contact.html'));
+  res.render('contact',{pageTitle:"contact"})
   });
 
 router.get('/index.html', (req, res, next) => {
-    res.sendFile(path.join(__dirname,'..','views','index.html'));
+  res.render('index',{pageTitle:"home"})
   });
 router.get('/about.html', (req, res, next) => {
-    res.sendFile(path.join(__dirname,'..','views','about.html'));
+    res.render('about',{pageTitle:"about"})
   });
 router.get('/service.html', (req, res, next) => {
-    res.sendFile(path.join(__dirname,'..','views','service.html'));
+  res.render('service',{pageTitle:"services"})
   });
 
 
