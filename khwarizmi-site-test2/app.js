@@ -3,7 +3,7 @@ const path = require('path');
 const app = express();
 const bodyParser = require('body-parser'); // requires also npm isntall --save body-parser
 
-app.set('view engine', 'pug');
+app.set('view engine', 'ejs');
 app.set('views', 'views');
 
 const admin = require('./routes/admin');
